@@ -1,0 +1,20 @@
+\begin{code}
+    \captionof{listing}{\label{code:array}Implemented algorithm}
+    \begin{minted}{c}
+#include <time.h>
+
+float *routine1(const float *a, const float *b, float *c, int dim) {
+
+    clock_t t0, t1;
+
+    t0 = clock();
+    for (int i = 0; i < dim; i++) {
+        c[i] = a[i] + b[i];
+    }
+    t1 = clock();
+
+    printf("%i,%12.4f\n", dim, (t1 - t0) / 1000000.0);
+    return c;
+}
+    \end{minted}
+\end{code}

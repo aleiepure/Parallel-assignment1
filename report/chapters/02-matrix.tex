@@ -1,0 +1,41 @@
+\section{Matrix copy via block reverse ordering}
+\textit{Task1} and \textit{Task2} ask for two functions, \texttt{routine1()} and \texttt{routine2()} respectively, that %
+take a matrix $M$ of size $N\times N$ and reverse the order in blocks $b\times b$ in another matrix $O$.\\%
+As the previous exercise, the only difference between the two functions is whether implicit parallelism is used, %
+and I chose again to avoid code duplication and accomplish what was requested via compilation flags.
+The compilation commands are the same as used before, adjusted with the new file names. In addition, the \textit{bash} %
+script was integrated with the new commands and, as before, each version was executed three times with $b$ values ranging %
+from $2^2$ to $2^8$ (inclusive).\\%
+Source code \ref{code:matrix} shows the implemented algorithm. It loops around each $b\times b$ block in the original %
+matrix $M$ and, for each, copies the values of the current block and the opposite one in the reverse order. Doing both %
+copies in the same iteration allows the main matrix to be looped only for half of the rows.
+\input{assets/code/matrix.tex}
+
+\subsection*{Results analysis}
+Table \ref{table:matrix_seq} and Table \ref{table:matrix_par} show the run times obtained for each execution. The parallel %
+version is 49\% (average) quicker than the same algorithm executed sequentialy.%
+
+\begin{table}[h!tb]
+    \centering
+    \parbox{.45\linewidth}{
+        \input{assets/tables/matrix_seq}%
+    }
+    \parbox{.50\linewidth}{
+        \input{assets/tables/matrix_par}%
+    }
+\end{table}
+
+To compute the effective bandwidth, it is necessary to know the number of bytes read $B_r$ and written $B_w$. In our %
+case, both values are equal and calculated as $(N\times N) * S_f$, where $N\times N$ is the size of the matrix $M$ and %
+$S_f$ is the size of a \textit{float} type (4 bytes). The algorithm reads two values and stores the same %
+quantity, totaling four operations for each matrix position. Substituting this information in equation (\ref{eq:bandwidth}), %
+we get the results in Table \ref{table:bandwidths}. Plot \ref{plot:matrix} shows a visual representation of the effective %
+bandwidth.
+
+\begin{equation}
+    \label{eq:bandwidth}
+    b=\frac{(B_r+B_w)/10^9}{t}=\frac{(4*4096^2*4)/10^9}{t}
+\end{equation}
+
+\input{assets/tables/bandwidths}
+\input{assets/plots/matrix}

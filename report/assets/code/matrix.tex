@@ -1,0 +1,26 @@
+\begin{code}
+    \captionof{listing}{\label{code:matrix}Implemented algorithm}
+    \begin{minted}{c}
+#include <time.h>
+
+float **routine1(float **m, int dim, int b, float **o) {
+    clock_t t0, t1;
+
+    t0 = clock();
+    for (int i = 0; i < dim / 2; i += b) {
+        for (int j = 0; j < dim; j += b) {
+            for (int k = 0; k < b; k++) {
+                for (int l = 0; l < b; l++) {
+                    o[i + k][j + l] = m[dim - i - (b - k)][dim - j - (b - l)];
+                    o[dim - i - (b - k)][dim - j - (b - l)] = m[i + k][j + l];
+                }
+            }
+        }
+    }
+    t1 = clock();
+
+    printf("%i,%12.4f\n", b, (t1 - t0) / 1000000.0);
+    return (float **) o;
+}
+    \end{minted}
+\end{code}

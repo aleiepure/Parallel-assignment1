@@ -1,0 +1,133 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global}
+    \entry{GCC_vectorization}{online}{}
+      \name{author}{1}{}{%
+        {{hash=dd9ccc06fbb207da78821279b5d5ae26}{%
+           family={team},
+           familyi={t\bibinitperiod},
+           given={GCC},
+           giveni={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{dd9ccc06fbb207da78821279b5d5ae26}
+      \strng{fullhash}{dd9ccc06fbb207da78821279b5d5ae26}
+      \strng{bibnamehash}{dd9ccc06fbb207da78821279b5d5ae26}
+      \strng{authorbibnamehash}{dd9ccc06fbb207da78821279b5d5ae26}
+      \strng{authornamehash}{dd9ccc06fbb207da78821279b5d5ae26}
+      \strng{authorfullhash}{dd9ccc06fbb207da78821279b5d5ae26}
+      \field{extraname}{1}
+      \field{sortinit}{t}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Auto-vectorization in GCC}
+      \verb{urlraw}
+      \verb https://gcc.gnu.org/projects/tree-ssa/vectorization.html
+      \endverb
+      \verb{url}
+      \verb https://gcc.gnu.org/projects/tree-ssa/vectorization.html
+      \endverb
+    \endentry
+    \entry{GCC_dev_opts}{online}{}
+      \name{author}{1}{}{%
+        {{hash=dd9ccc06fbb207da78821279b5d5ae26}{%
+           family={team},
+           familyi={t\bibinitperiod},
+           given={GCC},
+           giveni={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{dd9ccc06fbb207da78821279b5d5ae26}
+      \strng{fullhash}{dd9ccc06fbb207da78821279b5d5ae26}
+      \strng{bibnamehash}{dd9ccc06fbb207da78821279b5d5ae26}
+      \strng{authorbibnamehash}{dd9ccc06fbb207da78821279b5d5ae26}
+      \strng{authornamehash}{dd9ccc06fbb207da78821279b5d5ae26}
+      \strng{authorfullhash}{dd9ccc06fbb207da78821279b5d5ae26}
+      \field{extraname}{2}
+      \field{sortinit}{t}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{GCC Developer Options}
+      \verb{urlraw}
+      \verb https://gcc.gnu.org/onlinedocs/gcc/Developer-Options.html
+      \endverb
+      \verb{url}
+      \verb https://gcc.gnu.org/onlinedocs/gcc/Developer-Options.html
+      \endverb
+    \endentry
+    \entry{GCC_optimize_opts}{online}{}
+      \name{author}{1}{}{%
+        {{hash=dd9ccc06fbb207da78821279b5d5ae26}{%
+           family={team},
+           familyi={t\bibinitperiod},
+           given={GCC},
+           giveni={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{dd9ccc06fbb207da78821279b5d5ae26}
+      \strng{fullhash}{dd9ccc06fbb207da78821279b5d5ae26}
+      \strng{bibnamehash}{dd9ccc06fbb207da78821279b5d5ae26}
+      \strng{authorbibnamehash}{dd9ccc06fbb207da78821279b5d5ae26}
+      \strng{authornamehash}{dd9ccc06fbb207da78821279b5d5ae26}
+      \strng{authorfullhash}{dd9ccc06fbb207da78821279b5d5ae26}
+      \field{extraname}{3}
+      \field{sortinit}{t}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Options That Control Optimization}
+      \verb{urlraw}
+      \verb https://gcc.gnu.org/onlinedocs/gcc/Optimize-Options.html
+      \endverb
+      \verb{url}
+      \verb https://gcc.gnu.org/onlinedocs/gcc/Optimize-Options.html
+      \endverb
+    \endentry
+    \entry{GCC_x86_opts}{online}{}
+      \name{author}{1}{}{%
+        {{hash=dd9ccc06fbb207da78821279b5d5ae26}{%
+           family={team},
+           familyi={t\bibinitperiod},
+           given={GCC},
+           giveni={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{dd9ccc06fbb207da78821279b5d5ae26}
+      \strng{fullhash}{dd9ccc06fbb207da78821279b5d5ae26}
+      \strng{bibnamehash}{dd9ccc06fbb207da78821279b5d5ae26}
+      \strng{authorbibnamehash}{dd9ccc06fbb207da78821279b5d5ae26}
+      \strng{authornamehash}{dd9ccc06fbb207da78821279b5d5ae26}
+      \strng{authorfullhash}{dd9ccc06fbb207da78821279b5d5ae26}
+      \field{extraname}{4}
+      \field{sortinit}{t}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{x86 Options}
+      \verb{urlraw}
+      \verb https://gcc.gnu.org/onlinedocs/gcc/x86-Options.html
+      \endverb
+      \verb{url}
+      \verb https://gcc.gnu.org/onlinedocs/gcc/x86-Options.html
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
