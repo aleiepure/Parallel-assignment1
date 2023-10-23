@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.10.11)  22 OCT 2023 12:41
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.10.11)  23 OCT 2023 08:43
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -1393,7 +1393,7 @@ cc -std=c99 -O2 -ftree-vectorize -funroll-loops -fprefetch-loop-arrays
 al/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/local
 /texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
 (./assets/tables/array_seq_cluster.tex) (./assets/tables/array_par_cluster.tex)
-(./assets/tables/array_seq_local.tex) (./assets/tables/array_par_local.tex)
+[2] (./assets/tables/array_seq_local.tex) (./assets/tables/array_par_local.tex)
 (./assets/plots/array.tex
 
 Package caption Warning: The type was already set to `figure'
@@ -1402,7 +1402,7 @@ See the caption package documentation for explanation.
 
 Package hyperref Info: bookmark level for unknown plot defaults to 0 on input l
 ine 4.
-)) [2] [3] (./chapters/02-matrix.tex (./assets/code/matrix.tex
+)) [3] (./chapters/02-matrix.tex (./assets/code/matrix.tex
 \openout4 = `report.pyg'.
 
 
@@ -1447,7 +1447,7 @@ Package logreq Info: Writing requests to 'report.run.xml'.
 Here is how much of TeX's memory you used:
  47513 strings out of 476339
  1084298 string characters out of 5798430
- 2125581 words of memory out of 5000000
+ 2111581 words of memory out of 5000000
  68462 multiletter control sequences out of 15000+600000
  575456 words of font info for 69 fonts, out of 8000000 for 9000
  81 hyphenation exceptions out of 8191
@@ -1476,7 +1476,7 @@ onts/type1/public/cm-super/sfsx0900.pfb></usr/local/texlive/2023/texmf-dist/fon
 ts/type1/public/cm-super/sfti1000.pfb></usr/local/texlive/2023/texmf-dist/fonts
 /type1/public/cm-super/sftt0900.pfb></usr/local/texlive/2023/texmf-dist/fonts/t
 ype1/public/cm-super/sftt1000.pfb>
-Output written on build/report.pdf (6 pages, 412401 bytes).
+Output written on build/report.pdf (6 pages, 413472 bytes).
 PDF statistics:
  228 PDF objects out of 1000 (max. 8388607)
  168 compressed objects within 2 object streams
