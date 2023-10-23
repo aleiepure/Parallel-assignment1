@@ -26,7 +26,7 @@ sequential_array() {
   for j in $(seq 1 3);
   do
     touch array-sequential-$j.csv
-    echo "DIM,Time" > array-sequential-$j.csv
+    printf "DIM,Run%d\n" $j > array-sequential-$j.csv
 
     printf "Running sequential array"
     for i in $(seq 4 22);
@@ -57,7 +57,7 @@ parallel_array() {
   for j in $(seq 1 3);
   do
     touch array-parallel-$j.csv
-    echo "DIM,Time" > array-parallel-$j.csv
+    printf "DIM,Run%d\n" $j > array-parallel-$j.csv
 
     printf "Running parallel array"
     for i in $(seq 4 22);
@@ -89,7 +89,7 @@ sequential_matrix() {
   for j in $(seq 1 3);
   do
     touch matrix-sequential-$j.csv
-    echo "DIM,Time" > matrix-sequential-$j.csv
+    printf "DIM,Run%d\n" $j > matrix-sequential-$j.csv
 
     printf "Running sequential matrix"
     for i in $(seq 2 8);
@@ -120,7 +120,7 @@ parallel_matrix() {
   for j in $(seq 1 3);
   do
     touch matrix-parallel-$j.csv
-    echo "DIM,Time" > matrix-parallel-$j.csv
+    printf "DIM,Run%d\n" $j > matrix-parallel-$j.csv
 
     printf "Running parallel matrix"
     for i in $(seq 2 8);
