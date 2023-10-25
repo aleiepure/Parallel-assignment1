@@ -1,11 +1,10 @@
 \section{Matrix copy via block reverse ordering}
 \textit{Task1} and \textit{Task2} ask for two functions, \texttt{routine1()} and \texttt{routine2()} respectively, that %
 take a matrix $M$ of size $N\times N$ and reverse the order in blocks $b\times b$ in another matrix $O$.\\%
-As the previous exercise, the only difference between the two functions is whether implicit parallelism is used, %
-and I chose again to avoid code duplication and accomplish what was requested via compilation flags.
-The compilation commands are the same as used before, adjusted with the new file names. In addition, the \textit{bash} %
-script was integrated with the new commands and, as before, each version was executed three times with $b$ values ranging %
-from $2^2$ to $2^8$ (inclusive).\\%
+As the previous exercise, the only difference between the two functions is whether implicit parallelism is used. I chose %
+again to avoid code duplication and accomplish what was requested via compilation flags, the same used in the previous %
+exercise. In addition, the \textit{bash} script was integrated with the new commands and, as before, each version was %
+executed three times with $b$ values ranging from $2^2$ to $2^8$ (inclusive).\\%
 Source code \ref{code:matrix} shows the implemented algorithm. It loops around each $b\times b$ block in the original %
 matrix $M$ and, for each, copies the values of the current block and the opposite one in the reverse order. Doing both %
 copies in the same iteration allows the main matrix to be looped only for half of the rows.
